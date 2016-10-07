@@ -1,0 +1,2918 @@
+class SecretStorageException(Exception):
+class SecretServiceNotAvailableException(SecretStorageException):
+class LockedException(SecretStorageException):
+class ItemNotFoundException(SecretStorageException):
+class CompressorError(Exception):
+class UncompressableFileError(Exception):
+class FilterError(Exception):
+class ParserError(Exception):
+class OfflineGenerationError(Exception):
+class FilterDoesNotExist(Exception):
+class TemplateDoesNotExist(Exception):
+class TemplateSyntaxError(Exception):
+class DoesNotImplementTests(unittest.TestCase):
+class BrokenImplementationTests(unittest.TestCase):
+class BrokenMethodImplementationTests(unittest.TestCase):
+class Invalid(Exception):
+class DoesNotImplement(Invalid):
+class BrokenImplementation(Invalid):
+class BrokenMethodImplementation(Invalid):
+class InvalidInterface(Exception):
+class BadImplements(TypeError):
+class UnsupportedVersion(Exception):
+class CommandError(Exception):
+class AuthorizationFailure(Exception):
+class NoUniqueMatch(Exception):
+class ClientException(Exception):
+class HTTPBadRequest(ClientException):
+    message = "Bad request"
+
+class HTTPUnauthorized(ClientException):
+    message = "Unauthorized"
+
+class HTTPForbidden(ClientException):
+    message = "Forbidden"
+
+class HTTPNotFound(ClientException):
+    message = "Not found"
+
+class HTTPMethodNotAllowed(ClientException):
+    message = "Method Not Allowed"
+
+class HTTPNotAcceptable(ClientException):
+    message = "Method Not Acceptable"
+
+class HTTPProxyAuthRequired(ClientException):
+    message = "Proxy Authentication Required"
+
+class HTTPRequestTimeout(ClientException):
+    message = "Request Timeout"
+
+class HTTPConflict(ClientException):
+    message = "Conflict"
+
+class HTTPGone(ClientException):
+    message = "Gone"
+
+class HTTPLengthRequired(ClientException):
+    message = "Length Required"
+
+class HTTPPreconditionFailed(ClientException):
+    message = "Over limit"
+
+class HTTPRequestEntityTooLarge(ClientException):
+    message = "Request Entity Too Large"
+
+class HTTPRequestURITooLong(ClientException):
+    message = "Request URI Too Large"
+
+class HTTPUnsupportedMediaType(ClientException):
+    message = "Unsupported Media Type"
+
+class HTTPRequestedRangeNotSatisfiable(ClientException):
+    message = "Requested Range Not Satisfiable"
+
+class HTTPExpectationFailed(ClientException):
+    message = "Expectation Failed"
+
+class HTTPTeaPot(ClientException):
+class HTTPInternalServerError(ClientException):
+    message = "Internal Server Error"
+
+class HTTPNotImplemented(ClientException):
+    message = "Not Implemented"
+
+class HTTPBadGateway(ClientException):
+    message = "Bad Gateway"
+
+class HTTPServiceUnavailable(ClientException):
+    message = "Service Unavailable"
+
+class HTTPGatewayTimeout(ClientException):
+    message = "Gateway Timeout"
+
+class HTTPVersionNotSupported(ClientException):
+    message = "Version Not Supported"
+
+class SSHException(Exception):
+    message = "An unknown exception occurred."
+
+class SSHInjectionThreat(SSHException):
+class GrowVolumeException(SSHException):
+class CopyVolumeException(SSHException):
+class SetQOSRuleException(SSHException):
+class ProcessExecutionError(Exception):
+class RedisError(Exception):
+class AuthenticationError(RedisError):
+class ConnectionError(RedisError):
+class TimeoutError(RedisError):
+class BusyLoadingError(ConnectionError):
+class InvalidResponse(RedisError):
+class ResponseError(RedisError):
+class DataError(RedisError):
+class PubSubError(RedisError):
+class WatchError(RedisError):
+class NoScriptError(ResponseError):
+class ExecAbortError(ResponseError):
+class ReadOnlyError(ResponseError):
+class LockError(RedisError, ValueError):
+class SQLParseError(Exception):
+class BarbicanException(Exception):
+class PayloadException(BarbicanException):
+class HTTPError(Exception):
+class HTTPServerError(HTTPError):
+class HTTPClientError(HTTPError):
+class HTTPAuthError(HTTPError):
+class ExceptionsTest(base.TestCase):
+class VMwareDriverException(Exception):
+class VimException(VMwareDriverException):
+class VimSessionOverLoadException(VMwareDriverException):
+class VimConnectionException(VMwareDriverException):
+class VimAttributeException(VMwareDriverException):
+class VimFaultException(VimException):
+class ImageTransferException(VMwareDriverException):
+class VMwareDriverConfigurationException(VMwareDriverException):
+class UseLinkedCloneConfigurationFault(VMwareDriverConfigurationException):
+class MissingParameter(VMwareDriverException):
+class AlreadyExistsException(VimException):
+class CannotDeleteFileException(VimException):
+class FileAlreadyExistsException(VimException):
+class FileFaultException(VimException):
+class FileLockedException(VimException):
+class FileNotFoundException(VimException):
+class InvalidPowerStateException(VimException):
+class InvalidPropertyException(VimException):
+class NoPermissionException(VimException):
+class NotAuthenticatedException(VimException):
+class TaskInProgress(VimException):
+class DuplicateName(VimException):
+class NoDiskSpaceException(VimException):
+class ToolsUnavailableException(VimException):
+class ManagedObjectNotFoundException(VimException):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class ClientException(Exception):
+class ExceptionTestApp(object):
+class TestClientExceptions(functional.FunctionalTest):
+class KeystoneAuthException(Exception):
+class DBusException(Exception):
+class MissingErrorHandlerException(DBusException):
+class MissingReplyHandlerException(DBusException):
+class ValidationException(DBusException):
+class IntrospectionParserException(DBusException):
+class UnknownMethodException(DBusException):
+class NameExistsException(DBusException):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class UnsupportedVersion(Exception):
+class CommandError(Exception):
+class AuthorizationFailure(Exception):
+class NoUniqueMatch(Exception):
+class AuthSystemNotFound(Exception):
+class NoTokenLookupException(Exception):
+class EndpointNotFound(Exception):
+class AmbiguousEndpoints(Exception):
+class ConnectionRefused(Exception):
+class InstanceInErrorState(Exception):
+class VersionNotFoundForAPIMethod(Exception):
+class InstanceInDeletedState(Exception):
+class ClientException(Exception):
+class RetryAfterException(ClientException):
+class BadRequest(ClientException):
+    message = "Bad request"
+
+class Unauthorized(ClientException):
+    message = "Unauthorized"
+
+class Forbidden(ClientException):
+    message = "Forbidden"
+
+class NotFound(ClientException):
+    message = "Not found"
+
+class MethodNotAllowed(ClientException):
+    message = "Method Not Allowed"
+
+class NotAcceptable(ClientException):
+    message = "Not Acceptable"
+
+class Conflict(ClientException):
+    message = "Conflict"
+
+class OverLimit(RetryAfterException):
+    message = "Over limit"
+
+class RateLimit(RetryAfterException):
+    message = "Rate limit"
+
+class HTTPNotImplemented(ClientException):
+    message = "Not Implemented"
+
+class InvalidUsage(RuntimeError):
+class ResourceNotFound(Exception):
+class MakoException(Exception):
+class RuntimeException(MakoException):
+class CompileException(MakoException):
+class SyntaxException(MakoException):
+class UnsupportedError(MakoException):
+class NameConflictError(MakoException):
+class TemplateLookupException(MakoException):
+class TopLevelLookupException(TemplateLookupException):
+class RichTraceback(object):
+class ExceptionsTestCase(TestCase):
+class KazooException(Exception):
+class ZookeeperError(KazooException):
+class CancelledError(KazooException):
+class ConfigurationError(KazooException):
+class ZookeeperStoppedError(KazooException):
+class ConnectionDropped(KazooException):
+class LockTimeout(KazooException):
+class WriterNotClosedException(KazooException):
+class RolledBackError(ZookeeperError):
+class SystemZookeeperError(ZookeeperError):
+class RuntimeInconsistency(ZookeeperError):
+class DataInconsistency(ZookeeperError):
+class ConnectionLoss(ZookeeperError):
+class MarshallingError(ZookeeperError):
+class UnimplementedError(ZookeeperError):
+class OperationTimeoutError(ZookeeperError):
+class BadArgumentsError(ZookeeperError):
+class NewConfigNoQuorumError(ZookeeperError):
+class ReconfigInProcessError(ZookeeperError):
+class APIError(ZookeeperError):
+class NoNodeError(ZookeeperError):
+class NoAuthError(ZookeeperError):
+class BadVersionError(ZookeeperError):
+class NoChildrenForEphemeralsError(ZookeeperError):
+class NodeExistsError(ZookeeperError):
+class NotEmptyError(ZookeeperError):
+class SessionExpiredError(ZookeeperError):
+class InvalidCallbackError(ZookeeperError):
+class InvalidACLError(ZookeeperError):
+class AuthFailedError(ZookeeperError):
+class SessionMovedError(ZookeeperError):
+class NotReadOnlyCallError(ZookeeperError):
+class ConnectionClosedError(SessionExpiredError):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionRefused(ClientException):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class AmbiguousAuthSystem(ClientException):
+class InvalidAttribute(ClientException):
+class ExceptionsTestCase(WerkzeugTestCase):
+class HTTPException(Exception):
+class BadRequest(HTTPException):
+class ClientDisconnected(BadRequest):
+class SecurityError(BadRequest):
+class Unauthorized(HTTPException):
+class Forbidden(HTTPException):
+class NotFound(HTTPException):
+class MethodNotAllowed(HTTPException):
+class NotAcceptable(HTTPException):
+class RequestTimeout(HTTPException):
+class Conflict(HTTPException):
+class Gone(HTTPException):
+class LengthRequired(HTTPException):
+class PreconditionFailed(HTTPException):
+class RequestEntityTooLarge(HTTPException):
+class RequestURITooLarge(HTTPException):
+class UnsupportedMediaType(HTTPException):
+class RequestedRangeNotSatisfiable(HTTPException):
+class ExpectationFailed(HTTPException):
+class ImATeapot(HTTPException):
+class UnprocessableEntity(HTTPException):
+class PreconditionRequired(HTTPException):
+class TooManyRequests(HTTPException):
+class RequestHeaderFieldsTooLarge(HTTPException):
+class InternalServerError(HTTPException):
+class NotImplemented(HTTPException):
+class BadGateway(HTTPException):
+class ServiceUnavailable(HTTPException):
+class Aborter(object):
+class MemcacheError(Exception):
+class MemcacheClientError(MemcacheError):
+class MemcacheUnknownCommandError(MemcacheClientError):
+class MemcacheIllegalInputError(MemcacheClientError):
+class MemcacheServerError(MemcacheError):
+class MemcacheUnknownError(MemcacheError):
+class MemcacheUnexpectedCloseError(MemcacheServerError):
+class ResourceReleaseFailed(exceptions.TempestException):
+class InvalidResource(exceptions.TempestException):
+class InvalidData(exceptions.TempestException):
+class ShareTypeNotFound(exceptions.NotFound):
+class InvalidConfiguration(exceptions.TempestException):
+class ShareBuildErrorException(exceptions.TempestException):
+class AccessRuleCreateErrorException(exceptions.TempestException):
+class AccessRuleDeleteErrorException(exceptions.TempestException):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class NoTokenLookupException(ClientException):
+class AutomatonException(Exception):
+class InvalidState(AutomatonException):
+class NotInitialized(AutomatonException):
+class NotFound(AutomatonException):
+class Duplicate(AutomatonException):
+class FrozenMachine(AutomatonException):
+class Error(Exception):
+class ApiError(Error):
+class KnownError(ApiError):
+class UsageError(ApiError):
+class ControlledSchemaError(Error):
+class InvalidVersionError(ControlledSchemaError):
+class DatabaseNotControlledError(ControlledSchemaError):
+class DatabaseAlreadyControlledError(ControlledSchemaError):
+class WrongRepositoryError(ControlledSchemaError):
+class NoSuchTableError(ControlledSchemaError):
+class PathError(Error):
+class PathNotFoundError(PathError):
+class PathFoundError(PathError):
+class RepositoryError(Error):
+class InvalidRepositoryError(RepositoryError):
+class ScriptError(Error):
+class InvalidScriptError(ScriptError):
+class InvalidVersionError(Error):
+class NotSupportedError(Error):
+class InvalidConstraintError(Error):
+class MigrateDeprecationWarning(DeprecationWarning):
+class ExceptionsTest(utils.TestCase):
+class ClientException(Exception):
+class MissingArgs(ClientException):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionRefused(ClientException):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = "HTTP Error"
+
+class HTTPClientError(HttpError):
+    message = "HTTP Client Error"
+
+class HttpServerError(HttpError):
+    message = "HTTP Server Error"
+
+class BadRequest(HTTPClientError):
+    message = "Bad Request"
+
+class Unauthorized(HTTPClientError):
+    message = "Unauthorized"
+
+class PaymentRequired(HTTPClientError):
+    message = "Payment Required"
+
+class Forbidden(HTTPClientError):
+    message = "Forbidden"
+
+class NotFound(HTTPClientError):
+    message = "Not Found"
+
+class MethodNotAllowed(HTTPClientError):
+    message = "Method Not Allowed"
+
+class NotAcceptable(HTTPClientError):
+    message = "Not Acceptable"
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = "Proxy Authentication Required"
+
+class RequestTimeout(HTTPClientError):
+    message = "Request Timeout"
+
+class Conflict(HTTPClientError):
+    message = "Conflict"
+
+class Gone(HTTPClientError):
+    message = "Gone"
+
+class LengthRequired(HTTPClientError):
+    message = "Length Required"
+
+class PreconditionFailed(HTTPClientError):
+    message = "Precondition Failed"
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = "Request Entity Too Large"
+
+class RequestUriTooLong(HTTPClientError):
+    message = "Request-URI Too Long"
+
+class UnsupportedMediaType(HTTPClientError):
+    message = "Unsupported Media Type"
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = "Requested Range Not Satisfiable"
+
+class ExpectationFailed(HTTPClientError):
+    message = "Expectation Failed"
+
+class UnprocessableEntity(HTTPClientError):
+    message = "Unprocessable Entity"
+
+class InternalServerError(HttpServerError):
+    message = "Internal Server Error"
+
+class HttpNotImplemented(HttpServerError):
+    message = "Not Implemented"
+
+class BadGateway(HttpServerError):
+    message = "Bad Gateway"
+
+class ServiceUnavailable(HttpServerError):
+    message = "Service Unavailable"
+
+class GatewayTimeout(HttpServerError):
+    message = "Gateway Timeout"
+
+class HttpVersionNotSupported(HttpServerError):
+    message = "HTTP Version Not Supported"
+
+class UnsupportedVersion(Exception):
+class InvalidAPIVersion(Exception):
+class CommandError(Exception):
+class AuthorizationFailure(Exception):
+class NoUniqueMatch(Exception):
+class AuthSystemNotFound(Exception):
+class NoTokenLookupException(Exception):
+class EndpointNotFound(Exception):
+class ConnectionError(Exception):
+class AmbiguousEndpoints(Exception):
+class ClientException(Exception):
+class BadRequest(ClientException):
+    message = "Bad request"
+
+class Unauthorized(ClientException):
+    message = "Unauthorized"
+
+class Forbidden(ClientException):
+    message = "Forbidden"
+
+class NotFound(ClientException):
+    message = "Not found"
+
+class OverLimit(ClientException):
+    message = "Over limit"
+
+class HTTPNotImplemented(ClientException):
+    message = "Not Implemented"
+
+class WebSocketException(Exception):
+class WebSocketConnectionClosedException(WebSocketException):
+class WebSocketTimeoutException(WebSocketException):
+class InvalidOperation(RuntimeError):
+class ValidationError(ValueError):
+class InvalidAdapterTypeException(exceptions.VMwareDriverException):
+class InvalidDiskTypeException(exceptions.VMwareDriverException):
+class VirtualDiskNotFoundException(exceptions.VMwareDriverException):
+class ProfileNotFoundException(exceptions.VMwareDriverException):
+class NoValidDatastoreException(exceptions.VMwareDriverException):
+class ClusterNotFoundException(exceptions.VMwareDriverException):
+class NoValidHostException(exceptions.VMwareDriverException):
+class UnsupportedVersion(Exception):
+class ClientException(Exception):
+class HTTPConflict(Exception):
+    message = "Conflict"
+
+class HTTPNotFound(Exception):
+    message = "Not found"
+
+class HTTPForbidden(ClientException):
+    message = "Forbidden"
+
+class HTTPBadRequest(Exception):
+    message = "Bad request"
+
+class HTTPServerError(Exception):
+    message = "Error"
+
+class DjangoRuntimeWarning(RuntimeWarning):
+class AppRegistryNotReady(Exception):
+class ObjectDoesNotExist(Exception):
+class MultipleObjectsReturned(Exception):
+class SuspiciousOperation(Exception):
+class SuspiciousMultipartForm(SuspiciousOperation):
+class SuspiciousFileOperation(SuspiciousOperation):
+class DisallowedHost(SuspiciousOperation):
+class DisallowedRedirect(SuspiciousOperation):
+class PermissionDenied(Exception):
+class ViewDoesNotExist(Exception):
+class MiddlewareNotUsed(Exception):
+class ImproperlyConfigured(Exception):
+class FieldError(Exception):
+class ValidationError(Exception):
+class InvalidSessionKey(SuspiciousOperation):
+class SuspiciousSession(SuspiciousOperation):
+class MissingStorage(ImproperlyConfigured):
+class NoFileStorageConfigured(ImproperlyConfigured):
+class WizardViewCookieModified(SuspiciousOperation):
+class DisallowedModelAdminLookup(SuspiciousOperation):
+class DisallowedModelAdminToField(SuspiciousOperation):
+class CommandError(Exception):
+class AuthorizationFailure(Exception):
+class NoTokenLookupException(Exception):
+class EndpointNotFound(Exception):
+class UnsupportedVersion(Exception):
+class ClientException(Exception):
+class BadRequest(ClientException):
+    message = "Bad request"
+
+class Unauthorized(ClientException):
+    message = "Unauthorized"
+
+class Forbidden(ClientException):
+    message = "Forbidden"
+
+class NotFound(ClientException):
+    message = "Not found"
+
+class Conflict(ClientException):
+    message = "Conflict"
+
+class OverLimit(ClientException):
+    message = "Over limit"
+
+class HTTPNotImplemented(ClientException):
+    message = "Not Implemented"
+
+class InvalidSubnetRequestType(exceptions.BadRequest):
+    message = _("Cannot handle subnet of type %(subnet_type)s")
+
+class AddressCalculationFailure(exceptions.NeutronException):
+class InvalidAddressType(exceptions.NeutronException):
+    message = _("Unknown address type %(address_type)s")
+
+class IpAddressAllocationNotFound(exceptions.NeutronException):
+class IpAddressAlreadyAllocated(exceptions.Conflict):
+    message = _("IP address %(ip)s already allocated in subnet %(subnet_id)s")
+
+class InvalidIpForSubnet(exceptions.BadRequest):
+    message = _("IP address %(ip)s does not belong to subnet %(subnet_id)s")
+
+class InvalidAddressRequest(exceptions.BadRequest):
+message = _("The address allocation request could not be satisfied ""because: %(reason)s")
+class InvalidSubnetRequest(exceptions.BadRequest):
+message = _("The subnet request could not be satisfied because: ""%(reason)s")
+class AllocationOnAutoAddressSubnet(exceptions.NeutronException):
+class IpAddressGenerationFailure(exceptions.Conflict):
+    message = _("No more IP addresses available for subnet %(subnet_id)s.")
+
+class IpamValueInvalid(exceptions.Conflict):
+class Invalid(exceptions.NeutronException):
+    message = _("The value '%(value)s' for %(element)s is not valid.")
+
+class CallbackFailure(Exception):
+class NotificationError(object):
+class NeutronException(Exception):
+    message = _("An unknown exception occurred.")
+
+class BadRequest(NeutronException):
+    message = _('Bad %(resource)s request: %(msg)s')
+
+class NotFound(NeutronException):
+class Conflict(NeutronException):
+class NotAuthorized(NeutronException):
+    message = _("Not authorized.")
+
+class ServiceUnavailable(NeutronException):
+    message = _("The service is unavailable")
+
+class AdminRequired(NotAuthorized):
+    message = _("User does not have admin privileges: %(reason)s")
+
+class ObjectNotFound(NotFound):
+    message = _("Object %(id)s not found.")
+
+class NetworkNotFound(NotFound):
+    message = _("Network %(net_id)s could not be found")
+
+class SubnetNotFound(NotFound):
+    message = _("Subnet %(subnet_id)s could not be found")
+
+class SubnetPoolNotFound(NotFound):
+    message = _("Subnet pool %(subnetpool_id)s could not be found")
+
+class PortNotFound(NotFound):
+    message = _("Port %(port_id)s could not be found")
+
+class QosPolicyNotFound(NotFound):
+    message = _("QoS policy %(policy_id)s could not be found")
+
+class QosRuleNotFound(NotFound):
+class PortNotFoundOnNetwork(NotFound):
+class PortQosBindingNotFound(NotFound):
+class NetworkQosBindingNotFound(NotFound):
+class PolicyFileNotFound(NotFound):
+    message = _("Policy configuration policy.json could not be found")
+
+class PolicyInitError(NeutronException):
+    message = _("Failed to init policy %(policy)s because %(reason)s")
+
+class PolicyCheckError(NeutronException):
+    message = _("Failed to check policy %(policy)s because %(reason)s")
+
+class StateInvalid(BadRequest):
+    message = _("Unsupported port state: %(port_state)s")
+
+class InUse(NeutronException):
+    message = _("The resource is inuse")
+
+class QosPolicyInUse(InUse):
+class NetworkInUse(InUse):
+class SubnetInUse(InUse):
+class SubnetPoolInUse(InUse):
+message = _("Unable to complete operation on subnet pool ""%(subnet_pool_id)s. %(reason)s.")
+class PortInUse(InUse):
+class ServicePortInUse(InUse):
+class DhcpPortInUse(InUse):
+    message = _("Port %(port_id)s is already acquired by another DHCP agent")
+
+class PortBound(InUse):
+class MacAddressInUse(InUse):
+class HostRoutesExhausted(BadRequest):
+class DNSNameServersExhausted(BadRequest):
+class InvalidIpForNetwork(BadRequest):
+class InvalidIpForSubnet(BadRequest):
+class IpAddressInUse(InUse):
+class VlanIdInUse(InUse):
+message = _("Unable to create the network. ""The VLAN %(vlan_id)s on physical network "%(physical_network)s is in use.")
+class FlatNetworkInUse(InUse):
+message = _("Unable to create the flat network. ""Physical network %(physical_network)s is in use.")
+class TunnelIdInUse(InUse):
+message = _("Unable to create the network. ""The tunnel ID %(tunnel_id)s is in use.")
+class TenantNetworksDisabled(ServiceUnavailable):
+    message = _("Tenant network creation is not enabled.")
+
+class ResourceExhausted(ServiceUnavailable):
+class NoNetworkAvailable(ResourceExhausted):
+message = _("Unable to create the network. ""No tenant network is available for allocation.")
+class NoNetworkFoundInMaximumAllowedAttempts(ServiceUnavailable):
+message = _("Unable to create the network. ""No available network found in maximum allowed attempts.")
+class SubnetMismatchForPort(BadRequest):
+class MalformedRequestBody(BadRequest):
+    message = _("Malformed request body: %(reason)s")
+
+class Invalid(NeutronException):
+class InvalidInput(BadRequest):
+class InvalidAllocationPool(BadRequest):
+    message = _("The allocation pool %(pool)s is not valid.")
+
+class UnsupportedPortDeviceOwner(Conflict):
+class OverlappingAllocationPools(Conflict):
+message = _("Found overlapping allocation pools: ""%(pool_1)s %(pool_2)s for subnet %(subnet_cidr)s.")
+class OutOfBoundsAllocationPool(BadRequest):
+class MacAddressGenerationFailure(ServiceUnavailable):
+    message = _("Unable to generate unique mac on network %(net_id)s.")
+
+class IpAddressGenerationFailure(Conflict):
+    message = _("No more IP addresses available on network %(net_id)s.")
+
+class BridgeDoesNotExist(NeutronException):
+    message = _("Bridge %(bridge)s does not exist.")
+
+class PreexistingDeviceFailure(NeutronException):
+    message = _("Creation failed. %(dev_name)s already exists.")
+
+class QuotaResourceUnknown(NotFound):
+    message = _("Unknown quota resources %(unknown)s.")
+
+class OverQuota(Conflict):
+    message = _("Quota exceeded for resources: %(overs)s")
+
+class QuotaMissingTenant(BadRequest):
+    message = _("Tenant-id was missing from Quota request")
+
+class LimitMissingTenant(BadRequest):
+    message = _("Tenant-id was missing from Limit request")
+
+class InvalidQuotaValue(Conflict):
+message = _("Change would make usage less than 0 for the following ""resources: %(unders)s")
+class InvalidSharedSetting(Conflict):
+message = _("Unable to reconfigure sharing settings for network ""%(network)s. Multiple tenants are using it")
+class InvalidExtensionEnv(BadRequest):
+    message = _("Invalid extension environment: %(reason)s")
+
+class ExtensionsNotFound(NotFound):
+    message = _("Extensions not found: %(extensions)s")
+
+class InvalidContentType(NeutronException):
+    message = _("Invalid content type %(content_type)s")
+
+class ExternalIpAddressExhausted(BadRequest):
+message = _("Unable to find any IP address on external ""network %(net_id)s.")
+class TooManyExternalNetworks(NeutronException):
+    message = _("More than one external network exists")
+
+class InvalidConfigurationOption(NeutronException):
+class GatewayConflictWithAllocationPools(InUse):
+class GatewayIpInUse(InUse):
+class NetworkVlanRangeError(NeutronException):
+    message = _("Invalid network VLAN range: '%(vlan_range)s' - '%(error)s'")
+
+class PhysicalNetworkNameError(NeutronException):
+    message = _("Empty physical network name.")
+
+class NetworkTunnelRangeError(NeutronException):
+message = _("Invalid network Tunnel range: ""'%(tunnel_range)s' - %(error)s")
+class NetworkVxlanPortRangeError(NeutronException):
+    message = _("Invalid network VXLAN port range: '%(vxlan_range)s'")
+
+class VxlanNetworkUnsupported(NeutronException):
+    message = _("VXLAN Network unsupported.")
+
+class DuplicatedExtension(NeutronException):
+    message = _("Found duplicate extension: %(alias)s")
+
+class DeviceIDNotOwnedByTenant(Conflict):
+class InvalidCIDR(BadRequest):
+    message = _("Invalid CIDR %(input)s given as IP prefix")
+
+class RouterNotCompatibleWithAgent(NeutronException):
+    message = _("Router '%(router_id)s' is not compatible with this agent")
+
+class DvrHaRouterNotSupported(NeutronException):
+    message = _("Router '%(router_id)s' cannot be both DVR and HA")
+
+class FailToDropPrivilegesExit(SystemExit):
+class FloatingIpSetupException(NeutronException):
+class IpTablesApplyException(NeutronException):
+class NetworkIdOrRouterIdRequiredError(NeutronException):
+    message = _('network_id and router_id are None. One must be provided.')
+
+class AbortSyncRouters(NeutronException):
+    message = _("Aborting periodic_sync_routers_task due to an error")
+
+class FirewallInternalDriverError(NeutronException):
+    message = _("%(driver)s: Internal driver error.")
+
+class MissingMinSubnetPoolPrefix(BadRequest):
+    message = _("Unspecified minimum subnet pool prefix")
+
+class EmptySubnetPoolPrefixList(BadRequest):
+    message = _("Empty subnet pool prefix list")
+
+class PrefixVersionMismatch(BadRequest):
+    message = _("Cannot mix IPv4 and IPv6 prefixes in a subnet pool")
+
+class UnsupportedMinSubnetPoolPrefix(BadRequest):
+    message = _("Prefix '%(prefix)s' not supported in IPv%(version)s pool")
+
+class IllegalSubnetPoolPrefixBounds(BadRequest):
+class IllegalSubnetPoolPrefixUpdate(BadRequest):
+    message = _("Illegal update to prefixes: %(msg)s")
+
+class SubnetAllocationError(NeutronException):
+    message = _("Failed to allocate subnet: %(reason)s")
+
+class AddressScopePrefixConflict(Conflict):
+message = _("Failed to associate address scope: subnetpools ""within an address scope must have unique prefixes")
+class IllegalSubnetPoolAssociationToAddressScope(BadRequest):
+class IllegalSubnetPoolUpdate(BadRequest):
+    message = _("Illegal subnetpool update : %(reason)s")
+
+class MinPrefixSubnetAllocationError(BadRequest):
+class MaxPrefixSubnetAllocationError(BadRequest):
+class SubnetPoolDeleteError(BadRequest):
+    message = _("Unable to delete subnet pool: %(reason)s")
+
+class SubnetPoolQuotaExceeded(OverQuota):
+    message = _("Per-tenant subnet pool prefix quota exceeded")
+
+class DeviceNotFoundError(NeutronException):
+    message = _("Device '%(device_name)s' does not exist")
+
+class NetworkSubnetPoolAffinityError(BadRequest):
+message = _("Subnets hosted on the same network must be allocated from ""the same subnet pool")
+class ObjectActionError(NeutronException):
+    message = _('Object action %(action)s failed because: %(reason)s')
+
+class CTZoneExhaustedError(NeutronException):
+message = _("IPtables conntrack zones exhausted, iptables rules cannot ""be applied.")
+class TempestException(Exception):
+    message = "An unknown exception occurred"
+
+class RestClientException(TempestException,
+class InvalidConfiguration(TempestException):
+    message = "Invalid Configuration"
+
+class InvalidCredentials(TempestException):
+    message = "Invalid Credentials"
+
+class InvalidServiceTag(TempestException):
+    message = "Invalid service tag"
+
+class InvalidIdentityVersion(TempestException):
+class TimeoutException(TempestException):
+    message = "Request timed out"
+
+class BuildErrorException(TempestException):
+class ImageKilledException(TempestException):
+class AddImageException(TempestException):
+class EC2RegisterImageException(TempestException):
+class VolumeBuildErrorException(TempestException):
+class SnapshotBuildErrorException(TempestException):
+class VolumeBackupException(TempestException):
+class StackBuildErrorException(TempestException):
+class StackResourceBuildErrorException(TempestException):
+class AuthenticationFailure(TempestException):
+class EndpointNotFound(TempestException):
+    message = "Endpoint not found"
+
+class ImageFault(TempestException):
+    message = "Got image fault"
+
+class IdentityError(TempestException):
+    message = "Got identity error"
+
+class SSHTimeout(TempestException):
+class SSHExecCommandFailed(TempestException):
+class ServerUnreachable(TempestException):
+    message = "The server is not reachable via the configured network"
+
+class TearDownException(TempestException):
+class RFCViolation(RestClientException):
+    message = "RFC Violation"
+
+class InvalidHttpSuccessCode(RestClientException):
+    message = "The success code is different than the expected one"
+
+class BadRequest(RestClientException):
+    message = "Bad request"
+
+class ResponseWithNonEmptyBody(RFCViolation):
+class ResponseWithEntity(RFCViolation):
+message = ("RFC Violation! Response with 205 HTTP Status Code ""MUST NOT have an entity")
+class InvalidHTTPResponseHeader(RestClientException):
+    message = "HTTP response header is invalid"
+
+class InvalidStructure(TempestException):
+    message = "Invalid structure of table with details"
+
+class CommandFailed(Exception):
+class MechanismDriverError(exceptions.NeutronException):
+    message = _("%(method)s failed.")
+
+class ExtensionDriverError(exceptions.InvalidInput):
+    message = _("Extension %(driver)s failed.")
+
+class SriovUnsupportedNetworkType(exceptions.NeutronException):
+    message = _("Unsupported network type %(net_type)s.")
+
+class SriovNicError(n_exc.NeutronException):
+class InvalidDeviceError(SriovNicError):
+    message = _("Invalid Device %(dev_name)s: %(reason)s")
+
+class IpCommandError(SriovNicError):
+    message = _("ip command failed: %(reason)s")
+
+class IpCommandOperationNotSupportedError(SriovNicError):
+    message = _("Operation not supported on device %(dev_name)s")
+
+class InvalidPciSlotError(SriovNicError):
+    message = _("Invalid pci slot %(pci_slot)s")
+
+class IpCommandDeviceError(SriovNicError):
+    message = _("ip command failed on device %(dev_name)s: %(reason)s")
+
+class EmbranePluginException(neutron_exec.NeutronException):
+    message = _("An unexpected error occurred:%(err_msg)s")
+
+class UnsupportedException(EmbranePluginException):
+    message = _("%(err_msg)s")
+
+class UtifInfoError(embrane_exc.EmbranePluginException):
+message = _("Cannot retrieve utif info for the following reason: ""%(err_msg)s")
+class ContrailError(exc.NeutronException):
+    message = '%(msg)s'
+
+class ContrailNotFoundError(exc.NotFound):
+    message = '%(msg)s'
+
+class ContrailConflictError(exc.Conflict):
+    message = '%(msg)s'
+
+class ContrailBadRequestError(exc.BadRequest):
+    message = '%(msg)s'
+
+class ContrailServiceUnavailableError(exc.ServiceUnavailable):
+    message = '%(msg)s'
+
+class ContrailNotAuthorizedError(exc.NotAuthorized):
+    message = '%(msg)s'
+
+class CallbackWrongResourceType(exceptions.NeutronException):
+    message = _('Callback for %(resource_type)s returned wrong resource type')
+
+class CallbackNotFound(exceptions.NeutronException):
+    message = _('Callback for %(resource_type)s not found')
+
+class CallbacksMaxLimitReached(exceptions.NeutronException):
+    message = _("Cannot add multiple callbacks for %(resource_type)s")
+
+class ProvisionedThroughputExceededException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class ExpiredIteratorException(BotoServerError):
+class ResourceInUseException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class InvalidArgumentException(BotoServerError):
+class SubscriptionRequiredException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class ResourceConflictException(BotoServerError):
+class InvalidConfigurationException(BotoServerError):
+class TooManyRequestsException(BotoServerError):
+class InvalidParameterException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class InternalErrorException(BotoServerError):
+class NotAuthorizedException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class ResourceConflictException(BotoServerError):
+class DeveloperUserAlreadyRegisteredException(BotoServerError):
+class TooManyRequestsException(BotoServerError):
+class InvalidParameterException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class InternalErrorException(BotoServerError):
+class NotAuthorizedException(BotoServerError):
+class PipelineDeletedException(JSONResponseError):
+class InvalidRequestException(JSONResponseError):
+class TaskNotFoundException(JSONResponseError):
+class PipelineNotFoundException(JSONResponseError):
+class InternalServiceError(JSONResponseError):
+class DynamoDBExpiredTokenError(BotoServerError):
+class DynamoDBKeyNotFoundError(BotoClientError):
+class DynamoDBItemError(BotoClientError):
+class DynamoDBNumberError(BotoClientError):
+class DynamoDBConditionalCheckFailedError(DynamoDBResponseError):
+class DynamoDBValidationError(DynamoDBResponseError):
+class DynamoDBThroughputExceededError(DynamoDBResponseError):
+class InvalidGrantTokenException(BotoServerError):
+class DisabledException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class DependencyTimeoutException(BotoServerError):
+class InvalidMarkerException(BotoServerError):
+class AlreadyExistsException(BotoServerError):
+class InvalidCiphertextException(BotoServerError):
+class KeyUnavailableException(BotoServerError):
+class InvalidAliasNameException(BotoServerError):
+class UnsupportedOperationException(BotoServerError):
+class InvalidArnException(BotoServerError):
+class KMSInternalException(BotoServerError):
+class InvalidKeyUsageException(BotoServerError):
+class MalformedPolicyDocumentException(BotoServerError):
+class NotFoundException(BotoServerError):
+class InvalidRequestContentException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class InvalidParameterValueException(BotoServerError):
+class ServiceException(BotoServerError):
+class InvalidDeploymentIdException(BotoServerError):
+class InvalidDeploymentGroupNameException(BotoServerError):
+class DeploymentConfigAlreadyExistsException(BotoServerError):
+class InvalidRoleException(BotoServerError):
+class RoleRequiredException(BotoServerError):
+class DeploymentGroupAlreadyExistsException(BotoServerError):
+class DeploymentConfigLimitExceededException(BotoServerError):
+class InvalidNextTokenException(BotoServerError):
+class InvalidDeploymentConfigNameException(BotoServerError):
+class InvalidSortByException(BotoServerError):
+class InstanceDoesNotExistException(BotoServerError):
+class InvalidMinimumHealthyHostValueException(BotoServerError):
+class ApplicationLimitExceededException(BotoServerError):
+class ApplicationNameRequiredException(BotoServerError):
+class InvalidEC2TagException(BotoServerError):
+class DeploymentDoesNotExistException(BotoServerError):
+class DeploymentLimitExceededException(BotoServerError):
+class InvalidInstanceStatusException(BotoServerError):
+class RevisionRequiredException(BotoServerError):
+class InvalidBucketNameFilterException(BotoServerError):
+class DeploymentGroupLimitExceededException(BotoServerError):
+class DeploymentGroupDoesNotExistException(BotoServerError):
+class DeploymentConfigNameRequiredException(BotoServerError):
+class DeploymentAlreadyCompletedException(BotoServerError):
+class RevisionDoesNotExistException(BotoServerError):
+class DeploymentGroupNameRequiredException(BotoServerError):
+class DeploymentIdRequiredException(BotoServerError):
+class DeploymentConfigDoesNotExistException(BotoServerError):
+class BucketNameFilterRequiredException(BotoServerError):
+class InvalidTimeRangeException(BotoServerError):
+class ApplicationDoesNotExistException(BotoServerError):
+class InvalidRevisionException(BotoServerError):
+class InvalidSortOrderException(BotoServerError):
+class InvalidOperationException(BotoServerError):
+class InvalidAutoScalingGroupException(BotoServerError):
+class InvalidApplicationNameException(BotoServerError):
+class DescriptionTooLongException(BotoServerError):
+class ApplicationAlreadyExistsException(BotoServerError):
+class InvalidDeployedStateFilterException(BotoServerError):
+class DeploymentNotStartedException(BotoServerError):
+class DeploymentConfigInUseException(BotoServerError):
+class InstanceIdRequiredException(BotoServerError):
+class InvalidKeyPrefixFilterException(BotoServerError):
+class InvalidDeploymentStatusException(BotoServerError):
+class UnexpectedHTTPResponseError(Exception):
+class ArchiveError(Exception):
+class UploadArchiveError(ArchiveError):
+class DownloadArchiveError(ArchiveError):
+class TreeHashDoesNotMatchError(ArchiveError):
+class CaseIdNotFound(JSONResponseError):
+class CaseCreationLimitExceeded(JSONResponseError):
+class InternalServerError(JSONResponseError):
+class AttachmentLimitExceeded(JSONResponseError):
+class DescribeAttachmentLimitExceeded(JSONResponseError):
+class AttachmentSetIdNotFound(JSONResponseError):
+class AttachmentSetExpired(JSONResponseError):
+class AttachmentIdNotFound(JSONResponseError):
+class AttachmentSetSizeLimitExceeded(JSONResponseError):
+class DuplicateRequest(BotoServerError):
+class DomainLimitExceeded(BotoServerError):
+class InvalidInput(BotoServerError):
+class OperationLimitExceeded(BotoServerError):
+class UnsupportedTLD(BotoServerError):
+class TLDRulesViolation(BotoServerError):
+class ResourceNotFoundException(JSONResponseError):
+class ValidationException(JSONResponseError):
+class InvalidRequestException(BotoServerError):
+class CloudHsmServiceException(BotoServerError):
+class CloudHsmInternalException(BotoServerError):
+class SearchException(BotoServerError):
+class DocumentServiceException(BotoServerError):
+class SWFDomainAlreadyExistsError(SWFResponseError):
+class SWFLimitExceededError(SWFResponseError):
+class SWFOperationNotPermittedError(SWFResponseError):
+class SWFTypeAlreadyExistsError(SWFResponseError):
+class SWFWorkflowExecutionAlreadyStartedError(SWFResponseError):
+class InvalidSnsTopicNameException(BotoServerError):
+class InvalidS3BucketNameException(BotoServerError):
+class TrailAlreadyExistsException(BotoServerError):
+class InsufficientSnsTopicPolicyException(BotoServerError):
+class InvalidTrailNameException(BotoServerError):
+class InternalErrorException(BotoServerError):
+class TrailNotFoundException(BotoServerError):
+class S3BucketDoesNotExistException(BotoServerError):
+class TrailNotProvidedException(BotoServerError):
+class InvalidS3PrefixException(BotoServerError):
+class MaximumNumberOfTrailsExceededException(BotoServerError):
+class InsufficientS3BucketPolicyException(BotoServerError):
+class InvalidMaxResultsException(BotoServerError):
+class InvalidTimeRangeException(BotoServerError):
+class InvalidLookupAttributesException(BotoServerError):
+class InvalidCloudWatchLogsLogGroupArnException(BotoServerError):
+class InvalidCloudWatchLogsRoleArnException(BotoServerError):
+class CloudWatchLogsDeliveryUnavailableException(BotoServerError):
+class InvalidNextTokenException(BotoServerError):
+class ServerException(BotoServerError):
+class ClientException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class DataAlreadyAcceptedException(BotoServerError):
+class ResourceInUseException(BotoServerError):
+class ServiceUnavailableException(BotoServerError):
+class InvalidParameterException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class ResourceAlreadyExistsException(BotoServerError):
+class OperationAbortedException(BotoServerError):
+class InvalidSequenceTokenException(BotoServerError):
+class InvalidSubnet(JSONResponseError):
+class DBParameterGroupQuotaExceeded(JSONResponseError):
+class DBSubnetGroupAlreadyExists(JSONResponseError):
+class DBSubnetGroupQuotaExceeded(JSONResponseError):
+class InstanceQuotaExceeded(JSONResponseError):
+class InvalidRestore(JSONResponseError):
+class InvalidDBParameterGroupState(JSONResponseError):
+class AuthorizationQuotaExceeded(JSONResponseError):
+class DBSecurityGroupAlreadyExists(JSONResponseError):
+class InsufficientDBInstanceCapacity(JSONResponseError):
+class ReservedDBInstanceQuotaExceeded(JSONResponseError):
+class DBSecurityGroupNotFound(JSONResponseError):
+class DBInstanceAlreadyExists(JSONResponseError):
+class ReservedDBInstanceNotFound(JSONResponseError):
+class DBSubnetGroupDoesNotCoverEnoughAZs(JSONResponseError):
+class InvalidDBSecurityGroupState(JSONResponseError):
+class InvalidVPCNetworkState(JSONResponseError):
+class ReservedDBInstancesOfferingNotFound(JSONResponseError):
+class SNSTopicArnNotFound(JSONResponseError):
+class SNSNoAuthorization(JSONResponseError):
+class SnapshotQuotaExceeded(JSONResponseError):
+class OptionGroupQuotaExceeded(JSONResponseError):
+class DBParameterGroupNotFound(JSONResponseError):
+class SNSInvalidTopic(JSONResponseError):
+class InvalidDBSubnetGroupState(JSONResponseError):
+class DBSubnetGroupNotFound(JSONResponseError):
+class InvalidOptionGroupState(JSONResponseError):
+class SourceNotFound(JSONResponseError):
+class SubscriptionCategoryNotFound(JSONResponseError):
+class EventSubscriptionQuotaExceeded(JSONResponseError):
+class DBSecurityGroupNotSupported(JSONResponseError):
+class InvalidEventSubscriptionState(JSONResponseError):
+class InvalidDBSubnetState(JSONResponseError):
+class InvalidDBSnapshotState(JSONResponseError):
+class SubscriptionAlreadyExist(JSONResponseError):
+class DBSecurityGroupQuotaExceeded(JSONResponseError):
+class ProvisionedIopsNotAvailableInAZ(JSONResponseError):
+class AuthorizationNotFound(JSONResponseError):
+class OptionGroupAlreadyExists(JSONResponseError):
+class SubscriptionNotFound(JSONResponseError):
+class DBUpgradeDependencyFailure(JSONResponseError):
+class PointInTimeRestoreNotEnabled(JSONResponseError):
+class AuthorizationAlreadyExists(JSONResponseError):
+class DBSubnetQuotaExceeded(JSONResponseError):
+class OptionGroupNotFound(JSONResponseError):
+class DBParameterGroupAlreadyExists(JSONResponseError):
+class DBInstanceNotFound(JSONResponseError):
+class ReservedDBInstanceAlreadyExists(JSONResponseError):
+class InvalidDBInstanceState(JSONResponseError):
+class DBSnapshotNotFound(JSONResponseError):
+class DBSnapshotAlreadyExists(JSONResponseError):
+class StorageQuotaExceeded(JSONResponseError):
+class SubnetAlreadyInUse(JSONResponseError):
+class InternalServerException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class IdempotentParameterMismatchException(BotoServerError):
+class ResourceInUseException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class PredictorNotMountedException(BotoServerError):
+class InvalidInputException(BotoServerError):
+class DirectConnectClientException(Exception):
+class DirectConnectServerException(Exception):
+class LimitExceededException(JSONResponseError):
+class ResourceInUseException(JSONResponseError):
+class AccessDeniedException(JSONResponseError):
+class ResourceNotFoundException(JSONResponseError):
+class InternalServiceException(JSONResponseError):
+class ValidationException(JSONResponseError):
+class IncompatibleVersionException(JSONResponseError):
+class SESError(BotoServerError):
+class SESAddressNotVerifiedError(SESError):
+class SESIdentityNotVerifiedError(SESError):
+class SESDomainNotConfirmedError(SESError):
+class SESAddressBlacklistedError(SESError):
+class SESDailyQuotaExceededError(SESError):
+class SESMaxSendingRateExceededError(SESError):
+class SESDomainEndsWithDotError(SESError):
+class SESLocalAddressCharacterError(SESError):
+class SESIllegalAddressError(SESError):
+class ProvisionedThroughputExceededException(JSONResponseError):
+class LimitExceededException(JSONResponseError):
+class ConditionalCheckFailedException(JSONResponseError):
+class ResourceInUseException(JSONResponseError):
+class ResourceNotFoundException(JSONResponseError):
+class InternalServerError(JSONResponseError):
+class ValidationException(JSONResponseError):
+class ItemCollectionSizeLimitExceededException(JSONResponseError):
+class DynamoDBError(Exception):
+class UnknownSchemaFieldError(DynamoDBError):
+class UnknownIndexFieldError(DynamoDBError):
+class UnknownFilterTypeError(DynamoDBError):
+class QueryError(DynamoDBError):
+class ItemNotFound(DynamoDBError):
+class InvalidTypeException(BotoServerError):
+class LimitExceededException(BotoServerError):
+class InternalException(BotoServerError):
+class DisabledOperationException(BotoServerError):
+class ResourceNotFoundException(BotoServerError):
+class BaseException(BotoServerError):
+class ClusterNotFoundFault(JSONResponseError):
+class InvalidClusterSnapshotStateFault(JSONResponseError):
+class ClusterSnapshotNotFoundFault(JSONResponseError):
+class ClusterSecurityGroupQuotaExceededFault(JSONResponseError):
+class ReservedNodeOfferingNotFoundFault(JSONResponseError):
+class InvalidSubnet(JSONResponseError):
+class ClusterSubnetGroupQuotaExceededFault(JSONResponseError):
+class InvalidClusterStateFault(JSONResponseError):
+class InvalidClusterParameterGroupStateFault(JSONResponseError):
+class ClusterParameterGroupAlreadyExistsFault(JSONResponseError):
+class InvalidClusterSecurityGroupStateFault(JSONResponseError):
+class InvalidRestoreFault(JSONResponseError):
+class AuthorizationNotFoundFault(JSONResponseError):
+class ResizeNotFoundFault(JSONResponseError):
+class NumberOfNodesQuotaExceededFault(JSONResponseError):
+class ClusterSnapshotAlreadyExistsFault(JSONResponseError):
+class AuthorizationQuotaExceededFault(JSONResponseError):
+class AuthorizationAlreadyExistsFault(JSONResponseError):
+class ClusterSnapshotQuotaExceededFault(JSONResponseError):
+class ReservedNodeNotFoundFault(JSONResponseError):
+class ReservedNodeAlreadyExistsFault(JSONResponseError):
+class ClusterSecurityGroupAlreadyExistsFault(JSONResponseError):
+class ClusterParameterGroupNotFoundFault(JSONResponseError):
+class ReservedNodeQuotaExceededFault(JSONResponseError):
+class ClusterQuotaExceededFault(JSONResponseError):
+class ClusterSubnetQuotaExceededFault(JSONResponseError):
+class UnsupportedOptionFault(JSONResponseError):
+class InvalidVPCNetworkStateFault(JSONResponseError):
+class ClusterSecurityGroupNotFoundFault(JSONResponseError):
+class InvalidClusterSubnetGroupStateFault(JSONResponseError):
+class ClusterSubnetGroupAlreadyExistsFault(JSONResponseError):
+class NumberOfNodesPerClusterLimitExceededFault(JSONResponseError):
+class ClusterSubnetGroupNotFoundFault(JSONResponseError):
+class ClusterParameterGroupQuotaExceededFault(JSONResponseError):
+class ClusterAlreadyExistsFault(JSONResponseError):
+class InsufficientClusterCapacityFault(JSONResponseError):
+class InvalidClusterSubnetStateFault(JSONResponseError):
+class SubnetAlreadyInUse(JSONResponseError):
+class InvalidParameterCombinationFault(JSONResponseError):
+class AccessToSnapshotDeniedFault(JSONResponseError):
+class UnauthorizedOperationFault(JSONResponseError):
+class SnapshotCopyAlreadyDisabled(JSONResponseError):
+class ClusterNotFound(JSONResponseError):
+class UnknownSnapshotCopyRegion(JSONResponseError):
+class InvalidClusterSubnetState(JSONResponseError):
+class ReservedNodeQuotaExceeded(JSONResponseError):
+class InvalidClusterState(JSONResponseError):
+class HsmClientCertificateQuotaExceeded(JSONResponseError):
+class SubscriptionCategoryNotFound(JSONResponseError):
+class HsmClientCertificateNotFound(JSONResponseError):
+class SubscriptionEventIdNotFound(JSONResponseError):
+class ClusterSecurityGroupAlreadyExists(JSONResponseError):
+class HsmConfigurationAlreadyExists(JSONResponseError):
+class NumberOfNodesQuotaExceeded(JSONResponseError):
+class ReservedNodeOfferingNotFound(JSONResponseError):
+class BucketNotFound(JSONResponseError):
+class InsufficientClusterCapacity(JSONResponseError):
+class InvalidRestore(JSONResponseError):
+class UnauthorizedOperation(JSONResponseError):
+class ClusterQuotaExceeded(JSONResponseError):
+class InvalidVPCNetworkState(JSONResponseError):
+class ClusterSnapshotNotFound(JSONResponseError):
+class AuthorizationQuotaExceeded(JSONResponseError):
+class InvalidHsmClientCertificateState(JSONResponseError):
+class SNSTopicArnNotFound(JSONResponseError):
+class ResizeNotFound(JSONResponseError):
+class ClusterSubnetGroupNotFound(JSONResponseError):
+class SNSNoAuthorization(JSONResponseError):
+class ClusterSnapshotQuotaExceeded(JSONResponseError):
+class AccessToSnapshotDenied(JSONResponseError):
+class InvalidClusterSecurityGroupState(JSONResponseError):
+class NumberOfNodesPerClusterLimitExceeded(JSONResponseError):
+class ClusterSubnetQuotaExceeded(JSONResponseError):
+class SNSInvalidTopic(JSONResponseError):
+class ClusterSecurityGroupNotFound(JSONResponseError):
+class InvalidElasticIp(JSONResponseError):
+class InvalidClusterParameterGroupState(JSONResponseError):
+class InvalidHsmConfigurationState(JSONResponseError):
+class ClusterAlreadyExists(JSONResponseError):
+class HsmConfigurationQuotaExceeded(JSONResponseError):
+class ClusterSnapshotAlreadyExists(JSONResponseError):
+class SubscriptionSeverityNotFound(JSONResponseError):
+class SourceNotFound(JSONResponseError):
+class ReservedNodeAlreadyExists(JSONResponseError):
+class ClusterSubnetGroupQuotaExceeded(JSONResponseError):
+class ClusterParameterGroupNotFound(JSONResponseError):
+class InvalidS3BucketName(JSONResponseError):
+class InvalidS3KeyPrefix(JSONResponseError):
+class SubscriptionAlreadyExist(JSONResponseError):
+class HsmConfigurationNotFound(JSONResponseError):
+class AuthorizationNotFound(JSONResponseError):
+class ClusterSecurityGroupQuotaExceeded(JSONResponseError):
+class EventSubscriptionQuotaExceeded(JSONResponseError):
+class AuthorizationAlreadyExists(JSONResponseError):
+class InvalidClusterSnapshotState(JSONResponseError):
+class ClusterParameterGroupQuotaExceeded(JSONResponseError):
+class SnapshotCopyDisabled(JSONResponseError):
+class ClusterSubnetGroupAlreadyExists(JSONResponseError):
+class ReservedNodeNotFound(JSONResponseError):
+class HsmClientCertificateAlreadyExists(JSONResponseError):
+class InvalidClusterSubnetGroupState(JSONResponseError):
+class SubscriptionNotFound(JSONResponseError):
+class InsufficientS3BucketPolicy(JSONResponseError):
+class ClusterParameterGroupAlreadyExists(JSONResponseError):
+class UnsupportedOption(JSONResponseError):
+class CopyToRegionDisabled(JSONResponseError):
+class SnapshotCopyAlreadyEnabled(JSONResponseError):
+class IncompatibleOrderableOptions(JSONResponseError):
+class InvalidSubscriptionState(JSONResponseError):
+class InvalidLimitException(BotoServerError):
+class NoSuchBucketException(BotoServerError):
+class InvalidSNSTopicARNException(BotoServerError):
+class ResourceNotDiscoveredException(BotoServerError):
+class MaxNumberOfDeliveryChannelsExceededException(BotoServerError):
+class LastDeliveryChannelDeleteFailedException(BotoServerError):
+class InsufficientDeliveryPolicyException(BotoServerError):
+class InvalidRoleException(BotoServerError):
+class InvalidTimeRangeException(BotoServerError):
+class NoSuchDeliveryChannelException(BotoServerError):
+class NoSuchConfigurationRecorderException(BotoServerError):
+class InvalidS3KeyPrefixException(BotoServerError):
+class InvalidDeliveryChannelNameException(BotoServerError):
+class NoRunningConfigurationRecorderException(BotoServerError):
+class ValidationException(BotoServerError):
+class NoAvailableConfigurationRecorderException(BotoServerError):
+class InvalidNextTokenException(BotoServerError):
+class InvalidConfigurationRecorderNameException(BotoServerError):
+class NoAvailableDeliveryChannelException(BotoServerError):
+class MaxNumberOfConfigurationRecordersExceededException(BotoServerError):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class HTTPError(Exception):
+class HTTPWarning(Warning):
+class PoolError(HTTPError):
+class RequestError(PoolError):
+class SSLError(HTTPError):
+class ProxyError(HTTPError):
+class DecodeError(HTTPError):
+class ProtocolError(HTTPError):
+class MaxRetryError(RequestError):
+class HostChangedError(RequestError):
+class TimeoutStateError(HTTPError):
+class TimeoutError(HTTPError):
+class ReadTimeoutError(TimeoutError, RequestError):
+class ConnectTimeoutError(TimeoutError):
+class EmptyPoolError(PoolError):
+class ClosedPoolError(PoolError):
+class LocationValueError(ValueError, HTTPError):
+class LocationParseError(LocationValueError):
+class ResponseError(HTTPError):
+class SecurityWarning(HTTPWarning):
+class InsecureRequestWarning(SecurityWarning):
+class SystemTimeWarning(SecurityWarning):
+class InsecurePlatformWarning(SecurityWarning):
+class ResponseNotChunked(ProtocolError, ValueError):
+class InvalidToken(Exception):
+class ServiceError(Exception):
+class ConfigurationError(Exception):
+class RevocationListError(Exception):
+class HandleTests(test.TestCase):
+class HorizonReporterFilter(SafeExceptionReporterFilter):
+class HorizonException(Exception):
+class Http302(HorizonException):
+class NotAuthorized(HorizonException):
+class NotAuthenticated(HorizonException):
+class NotFound(HorizonException):
+class Conflict(HorizonException):
+class RecoverableError(HorizonException):
+class ServiceCatalogException(HorizonException):
+class AlreadyExists(HorizonException):
+class ConfigurationError(HorizonException):
+class NotAvailable(HorizonException):
+class WorkflowError(HorizonException):
+class WorkflowValidationError(HorizonException):
+class HandledException(HorizonException):
+class TestExceptions(base.BaseTestCase):
+class BackendException(Exception):
+class UnsupportedBackend(BackendException):
+class RedirectException(Exception):
+class GlanceStoreException(Exception):
+    message = _("An unknown exception occurred")
+
+class MissingCredentialError(GlanceStoreException):
+    message = _("Missing required credential: %(required)s")
+
+class BadAuthStrategy(GlanceStoreException):
+class AuthorizationRedirect(GlanceStoreException):
+    message = _("Redirecting to %(uri)s for authorization.")
+
+class NotFound(GlanceStoreException):
+    message = _("Image %(image)s not found")
+
+class UnknownScheme(GlanceStoreException):
+    message = _("Unknown scheme '%(scheme)s' found in URI")
+
+class BadStoreUri(GlanceStoreException):
+    message = _("The Store URI was malformed: %(uri)s")
+
+class Duplicate(GlanceStoreException):
+    message = _("Image %(image)s already exists")
+
+class Conflict(GlanceStoreException):
+message = _("An object with the same identifier is currently being ""operated on.")
+class StorageFull(GlanceStoreException):
+    message = _("There is not enough disk space on the image storage media.")
+
+class StorageWriteDenied(GlanceStoreException):
+    message = _("Permission to write image storage media denied.")
+
+class AuthBadRequest(GlanceStoreException):
+    message = _("Connect error/bad request to Auth service at URL %(url)s.")
+
+class AuthUrlNotFound(GlanceStoreException):
+    message = _("Auth service at URL %(url)s not found.")
+
+class AuthorizationFailure(GlanceStoreException):
+    message = _("Authorization failed.")
+
+class NotAuthenticated(GlanceStoreException):
+    message = _("You are not authenticated.")
+
+class Forbidden(GlanceStoreException):
+    message = _("You are not authorized to complete this action.")
+
+class ForbiddenPublicImage(Forbidden):
+    message = _("You are not authorized to complete this action.")
+
+class ProtectedImageDelete(Forbidden):
+    message = _("Image %(image_id)s is protected and cannot be deleted.")
+
+class Invalid(GlanceStoreException):
+    message = _("Data supplied was not valid.")
+
+class BadStoreConfiguration(GlanceStoreException):
+class DriverLoadFailure(GlanceStoreException):
+    message = _("Driver %(driver_name)s could not be loaded.")
+
+class BadDriverConfiguration(GlanceStoreException):
+class StoreDeleteNotSupported(GlanceStoreException):
+    message = _("Deleting images from this store is not supported.")
+
+class StoreGetNotSupported(GlanceStoreException):
+    message = _("Getting images from this store is not supported.")
+
+class StoreRandomGetNotSupported(StoreGetNotSupported):
+message = _("Getting images randomly from this store is not supported. ""Offset: %(offset)s, length: %(chunk_size)s")
+class StoreAddDisabled(GlanceStoreException):
+message = _("Configuration for store failed. Adding images to this ""store is disabled.")
+class MaxRedirectsExceeded(GlanceStoreException):
+    message = _("Maximum redirects (%(redirects)s) was exceeded.")
+
+class InvalidRedirect(GlanceStoreException):
+    message = _("Received invalid HTTP redirect.")
+
+class NoServiceEndpoint(GlanceStoreException):
+    message = _("Response from Keystone does not contain a Glance endpoint.")
+
+class RegionAmbiguity(GlanceStoreException):
+class RemoteServiceUnavailable(GlanceStoreException):
+    message = _("Remote server where the image is present is unavailable.")
+
+class WorkerCreationFailure(GlanceStoreException):
+    message = _("Server worker creation failed: %(reason)s.")
+
+class SchemaLoadError(GlanceStoreException):
+    message = _("Unable to load schema: %(reason)s")
+
+class InvalidObject(GlanceStoreException):
+message = _("Provided object does not match schema ""'%(schema)s': %(reason)s")
+class UnsupportedHeaderFeature(GlanceStoreException):
+    message = _("Provided header feature is unsupported: %(feature)s")
+
+class InUseByStore(GlanceStoreException):
+message = _("The image cannot be deleted because it is in use through ""the backend store outside of Glance.")
+class ImageDataNotFound(NotFound):
+    message = _("No image data could be found")
+
+class InvalidParameterValue(Invalid):
+class InvalidImageStatusTransition(Invalid):
+class FakeResponse(object):
+class ExceptionsArgsTest(utils.TestCase):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class CertificateConfigError(Exception):
+class CMSError(Exception):
+class EmptyCatalog(EndpointNotFound):
+class SSLError(ConnectionRefused):
+class DiscoveryFailure(ClientException):
+class VersionNotAvailable(DiscoveryFailure):
+class MethodNotImplemented(ClientException):
+class MissingAuthPlugin(ClientException):
+class NoMatchingPlugin(ClientException):
+class UnsupportedParameters(ClientException):
+class InvalidResponse(ClientException):
+class UnpackException(Exception):
+class BufferFull(UnpackException):
+class OutOfData(UnpackException):
+class UnpackValueError(UnpackException, ValueError):
+class ExtraData(ValueError):
+class PackException(Exception):
+class PackValueError(PackException, ValueError):
+class TemplateError(Exception):
+class TemplateNotFound(IOError, LookupError, TemplateError):
+class TemplatesNotFound(TemplateNotFound):
+class TemplateSyntaxError(TemplateError):
+class TemplateAssertionError(TemplateSyntaxError):
+class TemplateRuntimeError(TemplateError):
+class UndefinedError(TemplateRuntimeError):
+class SecurityError(TemplateRuntimeError):
+class FilterArgumentError(TemplateRuntimeError):
+class MySQLError(StandardError):
+class Warning(Warning, MySQLError):
+class Error(MySQLError):
+class InterfaceError(Error):
+class DatabaseError(Error):
+class DataError(DatabaseError):
+class OperationalError(DatabaseError):
+class IntegrityError(DatabaseError):
+class InternalError(DatabaseError):
+class ProgrammingError(DatabaseError):
+class NotSupportedError(DatabaseError):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class NeutronException(Exception):
+    message = _("An unknown exception occurred.")
+
+class NeutronClientException(NeutronException):
+class BadRequest(NeutronClientException):
+class Unauthorized(NeutronClientException):
+    message = _("Unauthorized: bad credentials.")
+
+class Forbidden(NeutronClientException):
+message = _("Forbidden: your credentials don't give you access to this ""resource.")
+class NotFound(NeutronClientException):
+class Conflict(NeutronClientException):
+class InternalServerError(NeutronClientException):
+class ServiceUnavailable(NeutronClientException):
+class NetworkNotFoundClient(NotFound):
+class PortNotFoundClient(NotFound):
+class StateInvalidClient(BadRequest):
+class NetworkInUseClient(Conflict):
+class PortInUseClient(Conflict):
+class IpAddressInUseClient(Conflict):
+class InvalidIpForNetworkClient(BadRequest):
+class InvalidIpForSubnetClient(BadRequest):
+class OverQuotaClient(Conflict):
+class IpAddressGenerationFailureClient(Conflict):
+class MacAddressInUseClient(Conflict):
+class ExternalIpAddressExhaustedClient(BadRequest):
+class NoAuthURLProvided(Unauthorized):
+    message = _("auth_url was not provided to the Neutron client")
+
+class EndpointNotFound(NeutronClientException):
+    message = _("Could not find Service or Region in Service Catalog.")
+
+class EndpointTypeNotFound(NeutronClientException):
+    message = _("Could not find endpoint type %(type_)s in Service Catalog.")
+
+class AmbiguousEndpoints(NeutronClientException):
+message = _("Found more than one matching endpoint in Service Catalog: ""%(matching_endpoints)")
+class RequestURITooLong(NeutronClientException):
+class ConnectionFailed(NeutronClientException):
+    message = _("Connection to neutron failed: %(reason)s")
+
+class SslCertificateValidationError(NeutronClientException):
+    message = _("SSL certificate validation has failed: %(reason)s")
+
+class MalformedResponseBody(NeutronClientException):
+    message = _("Malformed response body: %(reason)s")
+
+class InvalidContentType(NeutronClientException):
+    message = _("Invalid content type %(content_type)s.")
+
+class NeutronCLIError(NeutronException):
+class CommandError(NeutronCLIError):
+class UnsupportedVersion(NeutronCLIError):
+class NeutronClientNoUniqueMatch(NeutronCLIError):
+class TestExceptions(test.TestCase):
+class TaskFlowException(Exception):
+class StorageFailure(TaskFlowException):
+class ConductorFailure(TaskFlowException):
+class JobFailure(TaskFlowException):
+class UnclaimableJob(JobFailure):
+class ExecutionFailure(TaskFlowException):
+class RequestTimeout(ExecutionFailure):
+class InvalidState(ExecutionFailure):
+class DependencyFailure(TaskFlowException):
+class AmbiguousDependency(DependencyFailure):
+class MissingDependencies(DependencyFailure):
+class CompilationFailure(TaskFlowException):
+class IncompatibleVersion(TaskFlowException):
+class Duplicate(TaskFlowException):
+class NotFound(TaskFlowException):
+class Empty(TaskFlowException):
+class MultipleChoices(TaskFlowException):
+class InvalidFormat(TaskFlowException):
+class NotImplementedError(NotImplementedError):
+class WrappedFailure(mixins.StrMixin, Exception):
+class TestBestMatch(unittest.TestCase):
+class TestByRelevance(unittest.TestCase):
+class TestErrorTree(unittest.TestCase):
+class TestErrorReprStr(unittest.TestCase):
+class _Error(Exception):
+class ValidationError(_Error):
+class SchemaError(_Error):
+class RefResolutionError(Exception):
+class UnknownType(Exception):
+class FormatError(Exception):
+class ErrorTree(object):
+class AMQPException(Exception):
+class AMQPConnectionException(AMQPException):
+class AMQPChannelException(AMQPException):
+class MessageTimeout(Timeout):
+class SwiftException(Exception):
+class PutterConnectError(Exception):
+class InvalidTimestamp(SwiftException):
+class InsufficientStorage(SwiftException):
+class FooterNotSupported(SwiftException):
+class MultiphasePUTNotSupported(SwiftException):
+class SuffixSyncError(SwiftException):
+class RangeAlreadyComplete(SwiftException):
+class DiskFileError(SwiftException):
+class DiskFileNotOpen(DiskFileError):
+class DiskFileQuarantined(DiskFileError):
+class DiskFileCollision(DiskFileError):
+class DiskFileNotExist(DiskFileError):
+class DiskFileDeleted(DiskFileNotExist):
+class DiskFileExpired(DiskFileDeleted):
+class DiskFileNoSpace(DiskFileError):
+class DiskFileDeviceUnavailable(DiskFileError):
+class DiskFileXattrNotSupported(DiskFileError):
+class DeviceUnavailable(SwiftException):
+class InvalidAccountInfo(SwiftException):
+class PathNotDir(OSError):
+class ChunkReadError(SwiftException):
+class ChunkReadTimeout(Timeout):
+class ChunkWriteTimeout(Timeout):
+class ConnectionTimeout(Timeout):
+class ResponseTimeout(Timeout):
+class DriveNotMounted(SwiftException):
+class LockTimeout(MessageTimeout):
+class ThreadPoolDead(SwiftException):
+class RingBuilderError(SwiftException):
+class RingValidationError(RingBuilderError):
+class EmptyRingError(RingBuilderError):
+class DuplicateDeviceError(RingBuilderError):
+class UnPicklingError(SwiftException):
+class FileNotFoundError(SwiftException):
+class PermissionError(SwiftException):
+class ListingIterError(SwiftException):
+class ListingIterNotFound(ListingIterError):
+class ListingIterNotAuthorized(ListingIterError):
+class SegmentError(SwiftException):
+class ReplicationException(Exception):
+class ReplicationLockTimeout(LockTimeout):
+class MimeInvalid(SwiftException):
+class APIVersionError(SwiftException):
+class ClientException(Exception):
+class InvalidPidFileException(Exception):
+class ProfileException(Exception):
+class NotFoundException(ProfileException):
+class MethodNotAllowed(ProfileException):
+class ODFLIBNotInstalled(ProfileException):
+class PLOTLIBNotInstalled(ProfileException):
+class DataLoadFailure(ProfileException):
+class RFC3986Exception(Exception):
+class InvalidAuthority(RFC3986Exception):
+class TestExceptions(base.BaseTestCase):
+class BackendException(Exception):
+class UnsupportedBackend(BackendException):
+class RedirectException(Exception):
+class GlanceStoreException(Exception):
+    message = _("An unknown exception occurred")
+
+class MissingCredentialError(GlanceStoreException):
+    message = _("Missing required credential: %(required)s")
+
+class BadAuthStrategy(GlanceStoreException):
+class AuthorizationRedirect(GlanceStoreException):
+    message = _("Redirecting to %(uri)s for authorization.")
+
+class NotFound(GlanceStoreException):
+    message = _("Image %(image)s not found")
+
+class UnknownScheme(GlanceStoreException):
+    message = _("Unknown scheme '%(scheme)s' found in URI")
+
+class BadStoreUri(GlanceStoreException):
+    message = _("The Store URI was malformed: %(uri)s")
+
+class Duplicate(GlanceStoreException):
+    message = _("Image %(image)s already exists")
+
+class Conflict(GlanceStoreException):
+message = _("An object with the same identifier is currently being ""operated on.")
+class StorageFull(GlanceStoreException):
+    message = _("There is not enough disk space on the image storage media.")
+
+class StorageWriteDenied(GlanceStoreException):
+    message = _("Permission to write image storage media denied.")
+
+class AuthBadRequest(GlanceStoreException):
+    message = _("Connect error/bad request to Auth service at URL %(url)s.")
+
+class AuthUrlNotFound(GlanceStoreException):
+    message = _("Auth service at URL %(url)s not found.")
+
+class AuthorizationFailure(GlanceStoreException):
+    message = _("Authorization failed.")
+
+class NotAuthenticated(GlanceStoreException):
+    message = _("You are not authenticated.")
+
+class Forbidden(GlanceStoreException):
+    message = _("You are not authorized to complete this action.")
+
+class ForbiddenPublicImage(Forbidden):
+    message = _("You are not authorized to complete this action.")
+
+class ProtectedImageDelete(Forbidden):
+    message = _("Image %(image_id)s is protected and cannot be deleted.")
+
+class Invalid(GlanceStoreException):
+    message = _("Data supplied was not valid.")
+
+class BadStoreConfiguration(GlanceStoreException):
+class DriverLoadFailure(GlanceStoreException):
+    message = _("Driver %(driver_name)s could not be loaded.")
+
+class BadDriverConfiguration(GlanceStoreException):
+class StoreDeleteNotSupported(GlanceStoreException):
+    message = _("Deleting images from this store is not supported.")
+
+class StoreGetNotSupported(GlanceStoreException):
+    message = _("Getting images from this store is not supported.")
+
+class StoreRandomGetNotSupported(StoreGetNotSupported):
+message = _("Getting images randomly from this store is not supported. ""Offset: %(offset)s, length: %(chunk_size)s")
+class StoreAddDisabled(GlanceStoreException):
+message = _("Configuration for store failed. Adding images to this ""store is disabled.")
+class MaxRedirectsExceeded(GlanceStoreException):
+    message = _("Maximum redirects (%(redirects)s) was exceeded.")
+
+class InvalidRedirect(GlanceStoreException):
+    message = _("Received invalid HTTP redirect.")
+
+class NoServiceEndpoint(GlanceStoreException):
+    message = _("Response from Keystone does not contain a Glance endpoint.")
+
+class RegionAmbiguity(GlanceStoreException):
+class RemoteServiceUnavailable(GlanceStoreException):
+    message = _("Remote server where the image is present is unavailable.")
+
+class WorkerCreationFailure(GlanceStoreException):
+    message = _("Server worker creation failed: %(reason)s.")
+
+class SchemaLoadError(GlanceStoreException):
+    message = _("Unable to load schema: %(reason)s")
+
+class InvalidObject(GlanceStoreException):
+message = _("Provided object does not match schema ""'%(schema)s': %(reason)s")
+class UnsupportedHeaderFeature(GlanceStoreException):
+    message = _("Provided header feature is unsupported: %(feature)s")
+
+class InUseByStore(GlanceStoreException):
+message = _("The image cannot be deleted because it is in use through ""the backend store outside of Glance.")
+class ImageDataNotFound(NotFound):
+    message = _("No image data could be found")
+
+class InvalidParameterValue(Invalid):
+class InvalidImageStatusTransition(Invalid):
+class UnsupportedVersion(Exception):
+class CommandError(Exception):
+class AuthorizationFailure(Exception):
+class NoUniqueMatch(Exception):
+class NoTokenLookupException(Exception):
+class EndpointNotFound(Exception):
+class AuthUrlNotGiven(EndpointNotFound):
+class ServiceUrlNotGiven(EndpointNotFound):
+class ResponseFormatError(Exception):
+class AmbiguousEndpoints(Exception):
+class ClientException(Exception):
+class BadRequest(ClientException):
+    message = "Bad request"
+
+class Unauthorized(ClientException):
+    message = "Unauthorized"
+
+class Forbidden(ClientException):
+    message = "Forbidden"
+
+class NotFound(ClientException):
+    message = "Not found"
+
+class Conflict(ClientException):
+    message = "Conflict"
+
+class OverLimit(ClientException):
+    message = "Over limit"
+
+class HTTPNotImplemented(ClientException):
+    message = "Not Implemented"
+
+class UnprocessableEntity(ClientException):
+    message = "Unprocessable Entity"
+
+class ClientException(Exception):
+class MissingArgs(ClientException):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionRefused(ClientException):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = "HTTP Error"
+
+class HTTPClientError(HttpError):
+    message = "HTTP Client Error"
+
+class HttpServerError(HttpError):
+    message = "HTTP Server Error"
+
+class BadRequest(HTTPClientError):
+    message = "Bad Request"
+
+class Unauthorized(HTTPClientError):
+    message = "Unauthorized"
+
+class PaymentRequired(HTTPClientError):
+    message = "Payment Required"
+
+class Forbidden(HTTPClientError):
+    message = "Forbidden"
+
+class NotFound(HTTPClientError):
+    message = "Not Found"
+
+class MethodNotAllowed(HTTPClientError):
+    message = "Method Not Allowed"
+
+class NotAcceptable(HTTPClientError):
+    message = "Not Acceptable"
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = "Proxy Authentication Required"
+
+class RequestTimeout(HTTPClientError):
+    message = "Request Timeout"
+
+class Conflict(HTTPClientError):
+    message = "Conflict"
+
+class Gone(HTTPClientError):
+    message = "Gone"
+
+class LengthRequired(HTTPClientError):
+    message = "Length Required"
+
+class PreconditionFailed(HTTPClientError):
+    message = "Precondition Failed"
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = "Request Entity Too Large"
+
+class RequestUriTooLong(HTTPClientError):
+    message = "Request-URI Too Long"
+
+class UnsupportedMediaType(HTTPClientError):
+    message = "Unsupported Media Type"
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = "Requested Range Not Satisfiable"
+
+class ExpectationFailed(HTTPClientError):
+    message = "Expectation Failed"
+
+class UnprocessableEntity(HTTPClientError):
+    message = "Unprocessable Entity"
+
+class InternalServerError(HttpServerError):
+    message = "Internal Server Error"
+
+class HttpNotImplemented(HttpServerError):
+    message = "Not Implemented"
+
+class BadGateway(HttpServerError):
+    message = "Bad Gateway"
+
+class ServiceUnavailable(HttpServerError):
+    message = "Service Unavailable"
+
+class GatewayTimeout(HttpServerError):
+    message = "Gateway Timeout"
+
+class HttpVersionNotSupported(HttpServerError):
+    message = "HTTP Version Not Supported"
+
+class NoTokenLookupException(Exception):
+class ResponseFormatError(Exception):
+class KombuError(Exception):
+class SerializationError(KombuError):
+class EncodeError(SerializationError):
+class DecodeError(SerializationError):
+class NotBoundError(KombuError):
+class MessageStateError(KombuError):
+class LimitExceeded(KombuError):
+class ConnectionLimitExceeded(LimitExceeded):
+class ChannelLimitExceeded(LimitExceeded):
+class VersionMismatch(KombuError):
+class SerializerNotInstalled(KombuError):
+class ContentDisallowed(SerializerNotInstalled):
+class InconsistencyError(ConnectionError):
+class _Reasons(Enum):
+class UnsupportedAlgorithm(Exception):
+class AlreadyFinalized(Exception):
+class AlreadyUpdated(Exception):
+class NotYetFinalized(Exception):
+class InvalidTag(Exception):
+class InvalidSignature(Exception):
+class InternalError(Exception):
+class InvalidKey(Exception):
+class TestExpectedExceptions(test_utils.BaseTestCase):
+class MessagingException(Exception):
+class MessagingTimeout(MessagingException):
+class MessageDeliveryFailure(MessagingException):
+class InvalidTarget(MessagingException, ValueError):
+class RequestException(IOError):
+class HTTPError(RequestException):
+class ConnectionError(RequestException):
+class ProxyError(ConnectionError):
+class SSLError(ConnectionError):
+class Timeout(RequestException):
+class ConnectTimeout(ConnectionError, Timeout):
+class ReadTimeout(Timeout):
+class URLRequired(RequestException):
+class TooManyRedirects(RequestException):
+class MissingSchema(RequestException, ValueError):
+class InvalidSchema(RequestException, ValueError):
+class InvalidURL(RequestException, ValueError):
+class ChunkedEncodingError(RequestException):
+class ContentDecodingError(RequestException, BaseHTTPError):
+class StreamConsumedError(RequestException, TypeError):
+class RetryError(RequestException):
+class ClientException(Exception):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionError(ClientException):
+class ConnectionRefused(ConnectionError):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class Base(Exception):
+class UnsupportedVersion(Base):
+class ResourceNotFound(Base):
+class NoUniqueMatch(Base):
+class RemoteError(Base):
+class Unknown(RemoteError):
+class BadRequest(RemoteError):
+class Forbidden(RemoteError):
+class Conflict(RemoteError):
+class NotFound(RemoteError):
+class ClientException(Exception):
+class MissingArgs(ClientException):
+class ValidationError(ClientException):
+class UnsupportedVersion(ClientException):
+class CommandError(ClientException):
+class AuthorizationFailure(ClientException):
+class ConnectionRefused(ClientException):
+class AuthPluginOptionsMissing(AuthorizationFailure):
+class AuthSystemNotFound(AuthorizationFailure):
+class NoUniqueMatch(ClientException):
+class EndpointException(ClientException):
+class EndpointNotFound(EndpointException):
+class AmbiguousEndpoints(EndpointException):
+class HttpError(ClientException):
+    message = _("HTTP Error")
+
+class HTTPRedirection(HttpError):
+    message = _("HTTP Redirection")
+
+class HTTPClientError(HttpError):
+    message = _("HTTP Client Error")
+
+class HttpServerError(HttpError):
+    message = _("HTTP Server Error")
+
+class MultipleChoices(HTTPRedirection):
+    message = _("Multiple Choices")
+
+class BadRequest(HTTPClientError):
+    message = _("Bad Request")
+
+class Unauthorized(HTTPClientError):
+    message = _("Unauthorized")
+
+class PaymentRequired(HTTPClientError):
+    message = _("Payment Required")
+
+class Forbidden(HTTPClientError):
+    message = _("Forbidden")
+
+class NotFound(HTTPClientError):
+    message = _("Not Found")
+
+class MethodNotAllowed(HTTPClientError):
+    message = _("Method Not Allowed")
+
+class NotAcceptable(HTTPClientError):
+    message = _("Not Acceptable")
+
+class ProxyAuthenticationRequired(HTTPClientError):
+    message = _("Proxy Authentication Required")
+
+class RequestTimeout(HTTPClientError):
+    message = _("Request Timeout")
+
+class Conflict(HTTPClientError):
+    message = _("Conflict")
+
+class Gone(HTTPClientError):
+    message = _("Gone")
+
+class LengthRequired(HTTPClientError):
+    message = _("Length Required")
+
+class PreconditionFailed(HTTPClientError):
+    message = _("Precondition Failed")
+
+class RequestEntityTooLarge(HTTPClientError):
+    message = _("Request Entity Too Large")
+
+class RequestUriTooLong(HTTPClientError):
+    message = _("Request-URI Too Long")
+
+class UnsupportedMediaType(HTTPClientError):
+    message = _("Unsupported Media Type")
+
+class RequestedRangeNotSatisfiable(HTTPClientError):
+    message = _("Requested Range Not Satisfiable")
+
+class ExpectationFailed(HTTPClientError):
+    message = _("Expectation Failed")
+
+class UnprocessableEntity(HTTPClientError):
+    message = _("Unprocessable Entity")
+
+class InternalServerError(HttpServerError):
+    message = _("Internal Server Error")
+
+class HttpNotImplemented(HttpServerError):
+    message = _("Not Implemented")
+
+class BadGateway(HttpServerError):
+    message = _("Bad Gateway")
+
+class ServiceUnavailable(HttpServerError):
+    message = _("Service Unavailable")
+
+class GatewayTimeout(HttpServerError):
+    message = _("Gateway Timeout")
+
+class HttpVersionNotSupported(HttpServerError):
+    message = _("HTTP Version Not Supported")
+
+class MistralClientException(Exception):
+    message = "An unknown exception occurred"
+
+class IllegalArgumentException(MistralClientException):
+    message = "IllegalArgumentException occurred"
+
+class UnknownTimeZoneError(KeyError):
+class InvalidTimeError(Exception):
+class AmbiguousTimeError(InvalidTimeError):
+class NonExistentTimeError(InvalidTimeError):
+class AMQPError(Exception):
+class ConnectionError(AMQPError):
+class ChannelError(AMQPError):
+class RecoverableChannelError(ChannelError):
+class IrrecoverableChannelError(ChannelError):
+class RecoverableConnectionError(ConnectionError):
+class IrrecoverableConnectionError(ConnectionError):
+class Blocked(RecoverableConnectionError):
+class ConsumerCancelled(RecoverableConnectionError):
+class ContentTooLarge(RecoverableChannelError):
+class NoConsumers(RecoverableChannelError):
+class ConnectionForced(RecoverableConnectionError):
+class InvalidPath(IrrecoverableConnectionError):
+class AccessRefused(IrrecoverableChannelError):
+class NotFound(IrrecoverableChannelError):
+class ResourceLocked(RecoverableChannelError):
+class PreconditionFailed(IrrecoverableChannelError):
+class FrameError(IrrecoverableConnectionError):
+class FrameSyntaxError(IrrecoverableConnectionError):
+class InvalidCommand(IrrecoverableConnectionError):
+class ChannelNotOpen(IrrecoverableConnectionError):
+class UnexpectedFrame(IrrecoverableConnectionError):
+class ResourceError(RecoverableConnectionError):
+class NotAllowed(IrrecoverableConnectionError):
+class AMQPNotImplementedError(IrrecoverableConnectionError):
+class InternalError(IrrecoverableConnectionError):
+class HTTPException(Exception):
+class HTTPError(HTTPException):
+class HTTPRedirection(HTTPException):
+class _HTTPMove(HTTPRedirection):
+class HTTPMultipleChoices(_HTTPMove):
+class HTTPMovedPermanently(_HTTPMove):
+class HTTPFound(_HTTPMove):
+class HTTPSeeOther(_HTTPMove):
+class HTTPNotModified(HTTPRedirection):
+class HTTPUseProxy(_HTTPMove):
+class HTTPTemporaryRedirect(_HTTPMove):
+class HTTPClientError(HTTPError):
+class HTTPBadRequest(HTTPClientError):
+class HTTPUnauthorized(HTTPClientError):
+class HTTPPaymentRequired(HTTPClientError):
+class HTTPForbidden(HTTPClientError):
+class HTTPNotFound(HTTPClientError):
+class HTTPMethodNotAllowed(HTTPClientError):
+class HTTPNotAcceptable(HTTPClientError):
+class HTTPProxyAuthenticationRequired(HTTPClientError):
+class HTTPRequestTimeout(HTTPClientError):
+class HTTPConflict(HTTPClientError):
+class HTTPGone(HTTPClientError):
+class HTTPLengthRequired(HTTPClientError):
+class HTTPPreconditionFailed(HTTPClientError):
+class HTTPRequestEntityTooLarge(HTTPClientError):
+class HTTPRequestURITooLong(HTTPClientError):
+class HTTPUnsupportedMediaType(HTTPClientError):
+class HTTPRequestRangeNotSatisfiable(HTTPClientError):
+class HTTPExpectationFailed(HTTPClientError):
+class HTTPServerError(HTTPError):
+class HTTPInternalServerError(HTTPServerError):
+class HTTPNotImplemented(HTTPServerError):
+class HTTPBadGateway(HTTPServerError):
+class HTTPServiceUnavailable(HTTPServerError):
+class HTTPGatewayTimeout(HTTPServerError):
+class HTTPVersionNotSupported(HTTPServerError):
+class HTTPExceptionHandler(object):
+class OpenStackConfigException(Exception):

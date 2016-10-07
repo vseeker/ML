@@ -1,0 +1,17 @@
+kjhkhlkj
+class InvalidSharedSetting(Conflict):
+    message = _("Unable to reconfigure sharing settings for network "
+                "%(network)s. Multiple"
+                "tenants are using it")
+
+                "agwerhjglkwjerl"
+
+
+
+
+class InvalidSharedSetting(Conflict):
+    message = _("Unable to reconfigure sharing settings for network "
+                "%(network)s. Multiple"
+                "agwerhjglkwjerl"
+                "tenants are using it")
+

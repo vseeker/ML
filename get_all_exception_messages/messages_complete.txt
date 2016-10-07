@@ -1,0 +1,576 @@
+ "Bad request"
+ "Unauthorized"
+ "Forbidden"
+ "Not found"
+ "Method Not Allowed"
+ "Method Not Acceptable"
+ "Proxy Authentication Required"
+ "Request Timeout"
+ "Conflict"
+ "Gone"
+ "Length Required"
+ "Over limit"
+ "Request Entity Too Large"
+ "Request URI Too Large"
+ "Unsupported Media Type"
+ "Requested Range Not Satisfiable"
+ "Expectation Failed"
+ "Internal Server Error"
+ "Not Implemented"
+ "Bad Gateway"
+ "Service Unavailable"
+ "Gateway Timeout"
+ "Version Not Supported"
+ "An unknown exception occurred."
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ "Bad request"
+ "Unauthorized"
+ "Forbidden"
+ "Not found"
+ "Method Not Allowed"
+ "Not Acceptable"
+ "Conflict"
+ "Over limit"
+ "Rate limit"
+ "Not Implemented"
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ "HTTP Error"
+ "HTTP Client Error"
+ "HTTP Server Error"
+ "Bad Request"
+ "Unauthorized"
+ "Payment Required"
+ "Forbidden"
+ "Not Found"
+ "Method Not Allowed"
+ "Not Acceptable"
+ "Proxy Authentication Required"
+ "Request Timeout"
+ "Conflict"
+ "Gone"
+ "Length Required"
+ "Precondition Failed"
+ "Request Entity Too Large"
+ "Request-URI Too Long"
+ "Unsupported Media Type"
+ "Requested Range Not Satisfiable"
+ "Expectation Failed"
+ "Unprocessable Entity"
+ "Internal Server Error"
+ "Not Implemented"
+ "Bad Gateway"
+ "Service Unavailable"
+ "Gateway Timeout"
+ "HTTP Version Not Supported"
+ "Bad request"
+ "Unauthorized"
+ "Forbidden"
+ "Not found"
+ "Over limit"
+ "Not Implemented"
+ "Conflict"
+ "Not found"
+ "Forbidden"
+ "Bad request"
+ "Error"
+ "Bad request"
+ "Unauthorized"
+ "Forbidden"
+ "Not found"
+ "Conflict"
+ "Over limit"
+ "Not Implemented"
+ _("Cannot handle subnet of type %(subnet_type)s")
+ _("Unknown address type %(address_type)s")
+ _("IP address %(ip)s already allocated in subnet %(subnet_id)s")
+ _("IP address %(ip)s does not belong to subnet %(subnet_id)s")
+ _("The address allocation request could not be satisfied ""because: %(reason)s")
+ _("The subnet request could not be satisfied because: ""%(reason)s")
+ _("No more IP addresses available for subnet %(subnet_id)s.")
+ _("The value '%(value)s' for %(element)s is not valid.")
+ _("An unknown exception occurred.")
+ _('Bad %(resource)s request: %(msg)s')
+ _("Not authorized.")
+ _("The service is unavailable")
+ _("User does not have admin privileges: %(reason)s")
+ _("Object %(id)s not found.")
+ _("Network %(net_id)s could not be found")
+ _("Subnet %(subnet_id)s could not be found")
+ _("Subnet pool %(subnetpool_id)s could not be found")
+ _("Port %(port_id)s could not be found")
+ _("QoS policy %(policy_id)s could not be found")
+ _("Policy configuration policy.json could not be found")
+ _("Failed to init policy %(policy)s because %(reason)s")
+ _("Failed to check policy %(policy)s because %(reason)s")
+ _("Unsupported port state: %(port_state)s")
+ _("The resource is inuse")
+ _("Unable to complete operation on subnet pool ""%(subnet_pool_id)s. %(reason)s.")
+ _("Port %(port_id)s is already acquired by another DHCP agent")
+ _("Unable to create the network. ""The VLAN %(vlan_id)s on physical network "%(physical_network)s is in use.")
+ _("Unable to create the flat network. ""Physical network %(physical_network)s is in use.")
+ _("Unable to create the network. ""The tunnel ID %(tunnel_id)s is in use.")
+ _("Tenant network creation is not enabled.")
+ _("Unable to create the network. ""No tenant network is available for allocation.")
+ _("Unable to create the network. ""No available network found in maximum allowed attempts.")
+ _("Malformed request body: %(reason)s")
+ _("The allocation pool %(pool)s is not valid.")
+ _("Found overlapping allocation pools: ""%(pool_1)s %(pool_2)s for subnet %(subnet_cidr)s.")
+ _("Unable to generate unique mac on network %(net_id)s.")
+ _("No more IP addresses available on network %(net_id)s.")
+ _("Bridge %(bridge)s does not exist.")
+ _("Creation failed. %(dev_name)s already exists.")
+ _("Unknown quota resources %(unknown)s.")
+ _("Quota exceeded for resources: %(overs)s")
+ _("Tenant-id was missing from Quota request")
+ _("Tenant-id was missing from Limit request")
+ _("Change would make usage less than 0 for the following ""resources: %(unders)s")
+ _("Unable to reconfigure sharing settings for network ""%(network)s. Multiple tenants are using it")
+ _("Invalid extension environment: %(reason)s")
+ _("Extensions not found: %(extensions)s")
+ _("Invalid content type %(content_type)s")
+ _("Unable to find any IP address on external ""network %(net_id)s.")
+ _("More than one external network exists")
+ _("Invalid network VLAN range: '%(vlan_range)s' - '%(error)s'")
+ _("Empty physical network name.")
+ _("Invalid network Tunnel range: ""'%(tunnel_range)s' - %(error)s")
+ _("Invalid network VXLAN port range: '%(vxlan_range)s'")
+ _("VXLAN Network unsupported.")
+ _("Found duplicate extension: %(alias)s")
+ _("Invalid CIDR %(input)s given as IP prefix")
+ _("Router '%(router_id)s' is not compatible with this agent")
+ _("Router '%(router_id)s' cannot be both DVR and HA")
+ _('network_id and router_id are None. One must be provided.')
+ _("Aborting periodic_sync_routers_task due to an error")
+ _("%(driver)s: Internal driver error.")
+ _("Unspecified minimum subnet pool prefix")
+ _("Empty subnet pool prefix list")
+ _("Cannot mix IPv4 and IPv6 prefixes in a subnet pool")
+ _("Prefix '%(prefix)s' not supported in IPv%(version)s pool")
+ _("Illegal update to prefixes: %(msg)s")
+ _("Failed to allocate subnet: %(reason)s")
+ _("Failed to associate address scope: subnetpools ""within an address scope must have unique prefixes")
+ _("Illegal subnetpool update : %(reason)s")
+ _("Unable to delete subnet pool: %(reason)s")
+ _("Per-tenant subnet pool prefix quota exceeded")
+ _("Device '%(device_name)s' does not exist")
+ _("Subnets hosted on the same network must be allocated from ""the same subnet pool")
+ _('Object action %(action)s failed because: %(reason)s')
+ _("IPtables conntrack zones exhausted, iptables rules cannot ""be applied.")
+ "An unknown exception occurred"
+ "Invalid Configuration"
+ "Invalid Credentials"
+ "Invalid service tag"
+ "Request timed out"
+ "Endpoint not found"
+ "Got image fault"
+ "Got identity error"
+ "The server is not reachable via the configured network"
+ "RFC Violation"
+ "The success code is different than the expected one"
+ "Bad request"
+ ("RFC Violation! Response with 205 HTTP Status Code ""MUST NOT have an entity")
+ "HTTP response header is invalid"
+ "Invalid structure of table with details"
+ _("%(method)s failed.")
+ _("Extension %(driver)s failed.")
+ _("Unsupported network type %(net_type)s.")
+ _("Invalid Device %(dev_name)s: %(reason)s")
+ _("ip command failed: %(reason)s")
+ _("Operation not supported on device %(dev_name)s")
+ _("Invalid pci slot %(pci_slot)s")
+ _("ip command failed on device %(dev_name)s: %(reason)s")
+ _("An unexpected error occurred:%(err_msg)s")
+ _("%(err_msg)s")
+ _("Cannot retrieve utif info for the following reason: ""%(err_msg)s")
+ '%(msg)s'
+ '%(msg)s'
+ '%(msg)s'
+ '%(msg)s'
+ '%(msg)s'
+ '%(msg)s'
+ _('Callback for %(resource_type)s returned wrong resource type')
+ _('Callback for %(resource_type)s not found')
+ _("Cannot add multiple callbacks for %(resource_type)s")
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ _("An unknown exception occurred")
+ _("Missing required credential: %(required)s")
+ _("Redirecting to %(uri)s for authorization.")
+ _("Image %(image)s not found")
+ _("Unknown scheme '%(scheme)s' found in URI")
+ _("The Store URI was malformed: %(uri)s")
+ _("Image %(image)s already exists")
+ _("An object with the same identifier is currently being ""operated on.")
+ _("There is not enough disk space on the image storage media.")
+ _("Permission to write image storage media denied.")
+ _("Connect error/bad request to Auth service at URL %(url)s.")
+ _("Auth service at URL %(url)s not found.")
+ _("Authorization failed.")
+ _("You are not authenticated.")
+ _("You are not authorized to complete this action.")
+ _("You are not authorized to complete this action.")
+ _("Image %(image_id)s is protected and cannot be deleted.")
+ _("Data supplied was not valid.")
+ _("Driver %(driver_name)s could not be loaded.")
+ _("Deleting images from this store is not supported.")
+ _("Getting images from this store is not supported.")
+ _("Getting images randomly from this store is not supported. ""Offset: %(offset)s, length: %(chunk_size)s")
+ _("Configuration for store failed. Adding images to this ""store is disabled.")
+ _("Maximum redirects (%(redirects)s) was exceeded.")
+ _("Received invalid HTTP redirect.")
+ _("Response from Keystone does not contain a Glance endpoint.")
+ _("Remote server where the image is present is unavailable.")
+ _("Server worker creation failed: %(reason)s.")
+ _("Unable to load schema: %(reason)s")
+ _("Provided object does not match schema ""'%(schema)s': %(reason)s")
+ _("Provided header feature is unsupported: %(feature)s")
+ _("The image cannot be deleted because it is in use through ""the backend store outside of Glance.")
+ _("No image data could be found")
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ _("An unknown exception occurred.")
+ _("Unauthorized: bad credentials.")
+ _("Forbidden: your credentials don't give you access to this ""resource.")
+ _("auth_url was not provided to the Neutron client")
+ _("Could not find Service or Region in Service Catalog.")
+ _("Could not find endpoint type %(type_)s in Service Catalog.")
+ _("Found more than one matching endpoint in Service Catalog: ""%(matching_endpoints)")
+ _("Connection to neutron failed: %(reason)s")
+ _("SSL certificate validation has failed: %(reason)s")
+ _("Malformed response body: %(reason)s")
+ _("Invalid content type %(content_type)s.")
+ _("An unknown exception occurred")
+ _("Missing required credential: %(required)s")
+ _("Redirecting to %(uri)s for authorization.")
+ _("Image %(image)s not found")
+ _("Unknown scheme '%(scheme)s' found in URI")
+ _("The Store URI was malformed: %(uri)s")
+ _("Image %(image)s already exists")
+ _("An object with the same identifier is currently being ""operated on.")
+ _("There is not enough disk space on the image storage media.")
+ _("Permission to write image storage media denied.")
+ _("Connect error/bad request to Auth service at URL %(url)s.")
+ _("Auth service at URL %(url)s not found.")
+ _("Authorization failed.")
+ _("You are not authenticated.")
+ _("You are not authorized to complete this action.")
+ _("You are not authorized to complete this action.")
+ _("Image %(image_id)s is protected and cannot be deleted.")
+ _("Data supplied was not valid.")
+ _("Driver %(driver_name)s could not be loaded.")
+ _("Deleting images from this store is not supported.")
+ _("Getting images from this store is not supported.")
+ _("Getting images randomly from this store is not supported. ""Offset: %(offset)s, length: %(chunk_size)s")
+ _("Configuration for store failed. Adding images to this ""store is disabled.")
+ _("Maximum redirects (%(redirects)s) was exceeded.")
+ _("Received invalid HTTP redirect.")
+ _("Response from Keystone does not contain a Glance endpoint.")
+ _("Remote server where the image is present is unavailable.")
+ _("Server worker creation failed: %(reason)s.")
+ _("Unable to load schema: %(reason)s")
+ _("Provided object does not match schema ""'%(schema)s': %(reason)s")
+ _("Provided header feature is unsupported: %(feature)s")
+ _("The image cannot be deleted because it is in use through ""the backend store outside of Glance.")
+ _("No image data could be found")
+ "Bad request"
+ "Unauthorized"
+ "Forbidden"
+ "Not found"
+ "Conflict"
+ "Over limit"
+ "Not Implemented"
+ "Unprocessable Entity"
+ "HTTP Error"
+ "HTTP Client Error"
+ "HTTP Server Error"
+ "Bad Request"
+ "Unauthorized"
+ "Payment Required"
+ "Forbidden"
+ "Not Found"
+ "Method Not Allowed"
+ "Not Acceptable"
+ "Proxy Authentication Required"
+ "Request Timeout"
+ "Conflict"
+ "Gone"
+ "Length Required"
+ "Precondition Failed"
+ "Request Entity Too Large"
+ "Request-URI Too Long"
+ "Unsupported Media Type"
+ "Requested Range Not Satisfiable"
+ "Expectation Failed"
+ "Unprocessable Entity"
+ "Internal Server Error"
+ "Not Implemented"
+ "Bad Gateway"
+ "Service Unavailable"
+ "Gateway Timeout"
+ "HTTP Version Not Supported"
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ _("HTTP Error")
+ _("HTTP Redirection")
+ _("HTTP Client Error")
+ _("HTTP Server Error")
+ _("Multiple Choices")
+ _("Bad Request")
+ _("Unauthorized")
+ _("Payment Required")
+ _("Forbidden")
+ _("Not Found")
+ _("Method Not Allowed")
+ _("Not Acceptable")
+ _("Proxy Authentication Required")
+ _("Request Timeout")
+ _("Conflict")
+ _("Gone")
+ _("Length Required")
+ _("Precondition Failed")
+ _("Request Entity Too Large")
+ _("Request-URI Too Long")
+ _("Unsupported Media Type")
+ _("Requested Range Not Satisfiable")
+ _("Expectation Failed")
+ _("Unprocessable Entity")
+ _("Internal Server Error")
+ _("Not Implemented")
+ _("Bad Gateway")
+ _("Service Unavailable")
+ _("Gateway Timeout")
+ _("HTTP Version Not Supported")
+ "An unknown exception occurred"
+ "IllegalArgumentException occurred"
